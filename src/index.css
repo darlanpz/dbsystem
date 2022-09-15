@@ -92,6 +92,7 @@ a:active {
   align-items: center;
   justify-content: space-between;
   padding: 56px 0;
+  gap: 20px;
 }
 
 .flex-column {
