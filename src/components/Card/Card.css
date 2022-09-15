@@ -1,0 +1,29 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background: var(--card-bg);
+    padding: 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+    width: 100%;
+    max-width: 500px;
+}
+
+.card .icon-wrap {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--icon-bg);
+    border-radius: 8px;
+    transition: ease 0.2s;
+}
+
+.card:hover .icon-wrap {
+    width: 68px;
+    height: 68px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+}

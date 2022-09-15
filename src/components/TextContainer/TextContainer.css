@@ -1,0 +1,17 @@
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 16px;
+    max-width: 580px;
+}
+
+.hero p {
+    width: 100%;
+    max-width: 475px;
+}
+
+.textContainer button {
+    margin-top: 24px;
+
+}

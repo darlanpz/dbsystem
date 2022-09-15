@@ -1,0 +1,15 @@
+.HeroSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 56px 0;
+}
+
+.clients {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+    gap: 32px;
+    padding: 56px 0;
+    margin: 0 auto;
+    width: 100%;
+}
