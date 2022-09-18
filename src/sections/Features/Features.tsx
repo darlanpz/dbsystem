@@ -20,21 +20,25 @@ function Features() {
   return (
     <section className='flex-row'>
         <Card
+          style='default'
           icon=< BoundingBox size={32} />
           title={cardData[0].title}
           content={cardData[0].content}
         />
         <Card
+          style='default'
           icon=< CurrencyCircleDollar size={32} />
           title={cardData[1].title}
           content={cardData[1].content}
         />
         <Card
+          style='default'
           icon=< CloudArrowUp size={32}  />
           title={cardData[2].title}
           content={cardData[2].content}
         />
         <Card
+          style='default'
           icon=< Lifebuoy size={32} />
           title={cardData[3].title}
           content={cardData[3].content}

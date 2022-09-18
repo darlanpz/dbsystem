@@ -1,0 +1,11 @@
+.modules {
+    background: var(--secondary-bg-color);
+}
+
+.grid-modules {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin: 56px auto;
+    max-width: 1200px;
+}

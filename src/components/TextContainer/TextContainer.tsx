@@ -1,7 +1,7 @@
 import './TextContainer.css'
 
 interface Props {
-    hyerarchy: 'hero' | 'subheading'
+    hyerarchy: 'hero' | 'subheading' | 'centered'
     title: string
     paragraph01?: string
     paragraph02?: string
@@ -19,9 +19,18 @@ export default function TextContainer(props: Props) {
                 {props.button}
             </div>
         )
-    } else {
+    } else if (props.hyerarchy === 'subheading') {
         return (
             <div className="textContainer">
+                <h2>{props.title}</h2>
+                <p>{props.paragraph01}</p>
+                <p className="p-secondary">{props.paragraph02}</p>
+                {props.button}
+            </div>
+        )
+    } else {
+        return (
+            <div className="centered">
                 <h2>{props.title}</h2>
                 <p>{props.paragraph01}</p>
                 <p className="p-secondary">{props.paragraph02}</p>

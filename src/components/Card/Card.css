@@ -8,10 +8,49 @@
     cursor: pointer;
     transition: ease-in-out 0.5s;
     width: 100%;
-    max-width: 500px;
 }
 
-.card .icon-wrap {
+.card-center {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background: var(--card-bg);
+    padding: 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-no-background {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+    width: 100%;
+    background: none;
+}
+
+.card-no-background-center {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+    width: 100%;
+    background: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-wrap {
     width: 64px;
     height: 64px;
     display: flex;
@@ -20,10 +59,11 @@
     background: var(--icon-bg);
     border-radius: 8px;
     transition: ease 0.2s;
+    border: 2px solid transparent;
 }
 
-.card:hover .icon-wrap {
-    width: 68px;
-    height: 68px;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+.card:hover .icon-wrap,
+.card-no-brackground .icon-wrap {
+    border: 2px solid var(--accent-color);
 }
+

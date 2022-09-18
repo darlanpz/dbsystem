@@ -6,6 +6,11 @@
     max-width: 580px;
 }
 
+.centered {
+    justify-content: center;
+    text-align: center;
+}
+
 .hero p {
     width: 100%;
     max-width: 475px;

@@ -4,6 +4,8 @@ import Hero from  '../sections/Hero/Hero'
 import About from '../sections/About/About'
 import Social from '../sections/Social/Social'
 import Features from '../sections/Features/Features'
+import Modules from '../sections/ModulesSection/Modules'
+import Profiles from '../sections/Profiles/Profiles'
 
 import Nav from '../components/Nav/Nav'
 
@@ -29,6 +31,10 @@ function Home() {
             />
 
             <Features/>
+
+            <Modules />
+
+            <Profiles/>
 
         </main>
 
